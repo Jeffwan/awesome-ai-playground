@@ -4,7 +4,6 @@ set -o pipefail
 set -o nounset
 set -o errexit
 IFS=$'\n\t'
-export AWS_DEFAULT_OUTPUT="json"
 
 
 # Install dependencies. These commands has been moved to earlier stage

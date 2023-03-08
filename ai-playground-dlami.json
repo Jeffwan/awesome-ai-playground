@@ -41,7 +41,6 @@
         "snapshot_users": "{{user `ami_users`}}",
         "source_ami_filter": {
           "filters": {
-            "name": "{{user `source_ami_filter_name`}}",
             "architecture": "{{user `arch`}}",
             "root-device-type": "ebs",
             "state": "available",
