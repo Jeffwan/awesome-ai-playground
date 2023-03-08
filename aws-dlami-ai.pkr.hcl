@@ -7,7 +7,7 @@ packer {
   }
 }
 
-source "amazon-dlami" "ubuntu" {
+source "amazon-instance" "ubuntu" {
   ami_name      = "awesome-ai-playground-linux-aws"
   instance_type = "p3.2xlarge"
   region        = "us-west-2"
@@ -24,8 +24,8 @@ source "amazon-dlami" "ubuntu" {
 }
 
 build {
-  name    = "awesome-ai-playground"
+  name = "awesome-ai-playground"
   sources = [
-    "source.amazon-dlami.ubuntu"
+    "source.amazon-instance.ubuntu"
   ]
 }
